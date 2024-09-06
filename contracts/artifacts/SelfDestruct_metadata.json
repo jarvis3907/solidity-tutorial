@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "destroy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"details": "The contract allows only the owner to destroy it and transfer any remaining Ether balance to the owner's address.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "The `msg.sender` is the address that deploys the contract."
+				},
+				"destroy()": {
+					"details": "Only the owner can call this function. Once called, the contract is destroyed and its code is removed from the blockchain.The `selfdestruct` function also sends the remaining Ether to the owner's address."
+				},
+				"getOwner()": {
+					"details": "This is a simple view function that returns the owner's address.",
+					"returns": {
+						"_0": "The address of the owner."
+					}
+				}
+			},
+			"stateVariables": {
+				"owner": {
+					"details": "This is set at the time of contract deployment."
+				}
+			},
+			"title": "SelfDestruct Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"constructor": {
+					"notice": "The constructor sets the deployer as the owner of the contract."
+				},
+				"destroy()": {
+					"notice": "Destroys the contract and sends the remaining Ether to the owner's address."
+				},
+				"getOwner()": {
+					"notice": "Returns the address of the contract owner."
+				}
+			},
+			"notice": "This contract demonstrates the use of selfdestruct in Solidity.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SelfDestruct.sol": "SelfDestruct"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SelfDestruct.sol": {
+			"keccak256": "0xe775dc56ce92b231a5551414d3793c8a3b51595a84fd10606b6137877105acbe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5d87847e4be54f7a4b0a38d68537590d634b90e995652d5f6f27866661cb607b",
+				"dweb:/ipfs/QmY8YR3RQ9JsbwMm6L8gXG3iPwfckSBoRNrLAuJRbRYZGJ"
+			]
+		}
+	},
+	"version": 1
+}
