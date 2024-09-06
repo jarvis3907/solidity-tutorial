@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"details": "This contract demonstrates the use of constructors in Solidity. The contract initializes an `owner` variable through the constructor and provides  a way to receive Ether and withdraw it only by the owner.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Constructor that sets the deployer of the contract as the owner. The constructor is executed once when the contract is deployed."
+				},
+				"withdraw(uint256)": {
+					"details": "Withdraw function allows the owner to withdraw a specified `amount` of Ether from the contract. Reverts if the caller is not the owner or if the contract balance is insufficient.",
+					"params": {
+						"amount": "The amount of Ether (in wei) to withdraw from the contract."
+					}
+				}
+			},
+			"title": "Constructors Example",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Constructors.sol": "Constructors"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Constructors.sol": {
+			"keccak256": "0xf61ab035dba47af6ec8b74700e178c29c669b06ae2060e968febf609498a7b92",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9fd0a93a5cda3493170ef15baf77f762f608d7d5d6059ac685951466067e2b7f",
+				"dweb:/ipfs/QmZQKQrZYT7XPqSGk7r8FXHMKPEbevY1TBFvyAc9Hn2JmV"
+			]
+		}
+	},
+	"version": 1
+}
