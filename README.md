@@ -71,8 +71,6 @@ To run these smart contracts, you can use any Ethereum development environment s
 
 ### Prerequisites
 
-- Node.js
-- npm (Node Package Manager)
 - MetaMask or other Ethereum wallet for deployment and testing
 
 ### Installation
