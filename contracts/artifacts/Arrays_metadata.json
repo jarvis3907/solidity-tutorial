@@ -1,0 +1,164 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "dynamicSizeArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "fixedSizeArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "length",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "idx",
+						"type": "uint256"
+					}
+				],
+				"name": "remove",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "A contract demonstrating the use of both fixed-size and dynamic-size arrays in Solidity.",
+			"kind": "dev",
+			"methods": {
+				"add(uint256)": {
+					"details": "Adds a new element to the end of the dynamic array.",
+					"params": {
+						"x": "The value to be added to the dynamicSizeArray."
+					}
+				},
+				"length()": {
+					"details": "Returns the current length of the dynamic array.",
+					"returns": {
+						"_0": "The length of the dynamicSizeArray."
+					}
+				},
+				"pop()": {
+					"details": "Removes the last element from the dynamic array. The length of the array is reduced by one."
+				},
+				"remove(uint256)": {
+					"details": "Removes an element from the fixed-size array by setting it to the default value (0). Note: This does not change the array's length, as it's fixed.",
+					"params": {
+						"idx": "The index of the element to be removed from the fixedSizeArray."
+					}
+				},
+				"test()": {
+					"details": "Demonstrates creating a memory array in a function. This is a temporary array that exists only in memory. It is used here purely for illustrative purposes."
+				}
+			},
+			"title": "Arrays",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Arrays.sol": "Arrays"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Arrays.sol": {
+			"keccak256": "0xece6afcdb14b9a25f8225171d81837d7a91bf97a590ab45164359d6bad36e5ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b31b5a3a9ca36ba9c1db4bbead10077904d9849d671c69f71f08c1e9d23e97e4",
+				"dweb:/ipfs/QmYwHgSZ7qujoLyRRASPwWRDGDN4UuqQ7pTdN3J9hM8oPh"
+			]
+		}
+	},
+	"version": 1
+}
