@@ -1,0 +1,108 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "depositEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "recipientAddress",
+						"type": "address"
+					}
+				],
+				"name": "sendEther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"depositEther()": {
+					"details": "Function to deposit Ether into this contract. Ether sent to this function will be added to the contract's balance."
+				},
+				"getContractBalance()": {
+					"details": "Function to check the balance of the contract.",
+					"returns": {
+						"_0": "The balance of the contract in wei."
+					}
+				},
+				"sendEther(uint256,address)": {
+					"details": "Function to send Ether from this contract to the specified recipient address. The function checks if the contract has enough balance before sending ETH.",
+					"params": {
+						"amount": "The amount of Ether (in wei) to send to the recipient address."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SendingAndRecevingEth.sol": "EtherTransfer"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SendingAndRecevingEth.sol": {
+			"keccak256": "0xab607191ba0e2f62b880e6ebd26d5f58d36b8fb29124b2e305c05a4ecca22b2c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c5dc4e11b5d94c58d51802e8d572a2fce41a1ef6f22742066ffefe5af046467d",
+				"dweb:/ipfs/QmWRcGE2DqjNeT6vgUD2iZ87cYDtLrMHY4mQGSysqohVRb"
+			]
+		}
+	},
+	"version": 1
+}
