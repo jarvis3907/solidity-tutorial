@@ -1,0 +1,179 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "currentWinner",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCurrentWinner",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "number",
+						"type": "uint8"
+					}
+				],
+				"name": "getVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mostVotes",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "number",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"name": "voteMap",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract allows people to vote for their favorite number within the range of 1 to 5 (inclusive).  Each person is allowed to vote only once. The contract keeps track of the number of votes for each number  and can determine which number has the most votes. The contract implements the following methods: 1. getVotes(uint8 number): Returns the number of votes for the passed number.    If the number is not in the range of 1-5, the function call should fail. 2. vote(uint8 number): Allows a user to vote for the passed number.     The function call should fail if the user has already voted or if they pass an invalid number. 3. getCurrentWinner(): Returns the number that currently has the most votes.    If two numbers have the same number of votes, it returns the number that received the most recent vote.     If no numbers have received any votes, it returns 1.",
+			"kind": "dev",
+			"methods": {
+				"getCurrentWinner()": {
+					"details": "Returns the number that currently has the most votes. If two numbers have the same number of votes, it returns the number that received the most recent vote. If no votes have been cast, it returns 1.",
+					"returns": {
+						"_0": "The number with the most votes or 1 if no votes have been cast."
+					}
+				},
+				"getVotes(uint8)": {
+					"details": "Returns the number of votes for a specific number. Reverts if the number is out of range.",
+					"params": {
+						"number": "The number to get the vote count for."
+					},
+					"returns": {
+						"_0": "The vote count for the specified number."
+					}
+				},
+				"vote(uint8)": {
+					"details": "Allows a user to vote for a number in the range of 1 to 5. Reverts if the user has already voted or if the number is out of range.",
+					"params": {
+						"number": "The number to vote for."
+					}
+				}
+			},
+			"title": "Voting",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Voting.sol": "Voting"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Voting.sol": {
+			"keccak256": "0x17ec820b33e5e8f10ad7a03e52022990696e944d5e55c6715d8bc669b3ba5561",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://095f85b0cebfb887050630dcf18ecd6e2b1805c37692ec469680e84e72304e0d",
+				"dweb:/ipfs/Qmb9TswiwQtFfejj557Zm28sTm7yJ9zywkpWVrpiXWBcje"
+			]
+		}
+	},
+	"version": 1
+}
