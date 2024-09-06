@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewBlockNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewGasLimit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewMessage",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getBalance()": {
+					"details": "This function uses the `this` keyword to refer to the current contract instance. The `this` keyword, when combined with `address(this)`, returns the address of the current contract. `address(this).balance` retrieves the current Ether balance of the contract.",
+					"returns": {
+						"_0": "The Ether balance of the contract."
+					}
+				},
+				"viewBlockNumber()": {
+					"details": "This function uses the `block` keyword to access blockchain properties. `block.number` is a global variable that returns the number of the current block in the blockchain. This can be used to measure time or determine the order of transactions.",
+					"returns": {
+						"_0": "The current block number."
+					}
+				},
+				"viewGasLimit()": {
+					"details": "This function also uses the `block` keyword to access the current block's gas limit. `block.gaslimit` is a global variable that returns the gas limit of the current block. It is useful for understanding the current constraints on gas usage for transactions in the block.",
+					"returns": {
+						"_0": "The gas limit of the current block."
+					}
+				},
+				"viewMessage()": {
+					"details": "This function uses the `msg` keyword to access the message sender's address. `msg.sender` is a global variable that represents the address of the account that called the function. It is commonly used for authentication and access control.",
+					"returns": {
+						"_0": "The address of the caller (transaction sender)."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GlobalKeywords.sol": "GlobalKeywords"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/GlobalKeywords.sol": {
+			"keccak256": "0xacaf6c3d1d456b5c7d0c31aec6e3cf910f27acdd837a0e1cd78c361c5d1953fb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dd653828f59d85bda37d71fa5c5fbc3a087d84c9c62749f2dd8fe340bca09ab4",
+				"dweb:/ipfs/QmRswGiUmdarvf2fksiqsqjSaPZWnrSr3gD5aXqjpZbnx8"
+			]
+		}
+	},
+	"version": 1
+}

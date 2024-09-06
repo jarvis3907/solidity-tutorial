@@ -1,0 +1,165 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "key1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "key2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "value",
+						"type": "bool"
+					}
+				],
+				"name": "addItemToNestedMap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "key",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "value",
+						"type": "bool"
+					}
+				],
+				"name": "addItems",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "key",
+						"type": "uint256"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "key1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "key2",
+						"type": "uint256"
+					}
+				],
+				"name": "getFromNestedMap",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addItemToNestedMap(uint256,uint256,bool)": {
+					"details": "Adds or updates an item in the `nestedMap` nested mapping. This function demonstrates how to work with nested mappings in Solidity. A nested mapping allows you to map a key to another mapping.",
+					"params": {
+						"key1": "The first key in the nested mapping.",
+						"key2": "The second key within the mapping associated with `key1`.",
+						"value": "The boolean value to associate with the given keys."
+					}
+				},
+				"addItems(uint256,bool)": {
+					"details": "Adds or updates an item in the `map` mapping. Mappings do not have a length or a concept of keys that do not exist.  Assigning a value to a key will add it if it does not exist or update it if it does.",
+					"params": {
+						"key": "The key in the mapping to add or update.",
+						"value": "The boolean value to associate with the given key."
+					}
+				},
+				"get(uint256)": {
+					"details": "Retrieves the value associated with a given key in the `map` mapping. If the key does not exist in the mapping, it returns the default value of the data type. For `bool`, the default value is `false`. For `int` or `uint`, the default value is `0`.",
+					"params": {
+						"key": "The key to look up in the mapping."
+					},
+					"returns": {
+						"_0": "The boolean value associated with the given key, or `false` if the key does not exist."
+					}
+				},
+				"getFromNestedMap(uint256,uint256)": {
+					"details": "Retrieves the value associated with the given keys in the `nestedMap` mapping. Similar to simple mappings, if the keys do not exist, the default value for `bool` (false) is returned.",
+					"params": {
+						"key1": "The first key in the nested mapping.",
+						"key2": "The second key within the mapping associated with `key1`."
+					},
+					"returns": {
+						"_0": "The boolean value associated with the given keys, or `false` if the keys do not exist."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Mapping.sol": "Mapping"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Mapping.sol": {
+			"keccak256": "0x2eff3e1374de6d097be9c326c1ce0fae7fb7b05ed8ccdc57cc55823e550cda62",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6776b8cd3dd474b755d407b2f6642ab1d6aee853aa51bd24adc387f3df69824e",
+				"dweb:/ipfs/QmXihnq2oecWieRPLLZcuBcXBCzykAQmB7Up7LjamNv1nA"
+			]
+		}
+	},
+	"version": 1
+}

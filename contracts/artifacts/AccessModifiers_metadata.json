@@ -1,0 +1,197 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "doubleSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getExternalMethod",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPrivateMethod",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPublicMethod",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getReturnMultipleValues",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicInteger",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"add(uint256,uint256)": {
+					"details": "Pure function: This function does not read from or modify the contract's state. It takes two `uint256` numbers as input parameters and returns their sum.",
+					"params": {
+						"a": "The first number to add.",
+						"b": "The second number to add."
+					},
+					"returns": {
+						"_0": "The sum of `a` and `b`."
+					}
+				},
+				"doubleSum(uint256,uint256)": {
+					"details": "Pure function: This function calls another pure function `add` to compute the sum of two numbers and then doubles the result. Since it does not interact with state variables, it is marked as `pure`. Only `pure` functions can call other `pure` functions because they do not modify the state.",
+					"params": {
+						"x": "The first number to add.",
+						"y": "The second number to add."
+					},
+					"returns": {
+						"_0": "The doubled sum of `x` and `y`."
+					}
+				},
+				"getExternalMethod()": {
+					"details": "External function: Can only be called from outside the contract. It is not accessible from within this contract using `this.getExternalMethod()`. Returns the value of `publicInteger`."
+				},
+				"getPrivateMethod()": {
+					"details": "Public function: Can be accessed from within the contract, derived contracts, and externally. This function returns the value of the private variable `privateInteger`. Although the variable `privateInteger` is private, the function itself is public, so it can be called from outside the contract."
+				},
+				"getPublicMethod()": {
+					"details": "Public function: Can be accessed from within the contract, derived contracts, and externally. It is a `view` function, meaning it doesn't modify the state, it only reads from it. Returns the value of `publicInteger`."
+				},
+				"getReturnMultipleValues()": {
+					"details": "Public function: Can be accessed from within the contract, derived contracts, and externally. This function is marked as `view` because it does not modify the contract's state; it only reads from it. It returns two values: - The value of `publicInteger` (a public state variable). - The value of `privateInteger` (a private state variable). The function demonstrates how multiple values can be returned from a single function in Solidity."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AccessModifiers.sol": "AccessModifiers"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AccessModifiers.sol": {
+			"keccak256": "0x26a73dde344635967ab098d65485bdf1aad642864b45750785ba8a0c172fd65f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://46f36ead8cd56ca9a43b122832856d91faf4f3f62edba803d3b7f4b3f05c9afb",
+				"dweb:/ipfs/QmcAKeJdG5h54XAWXUPZL4HapGSZ4tXYphWWBhBKsTLo5a"
+			]
+		}
+	},
+	"version": 1
+}

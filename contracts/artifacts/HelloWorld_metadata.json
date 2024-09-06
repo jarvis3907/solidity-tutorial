@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"get()": {
+					"details": "Returns the currently stored number. This is a `view` function, meaning it does not modify the state of the contract. It allows reading the value of the `number` state variable without costing gas when called externally.",
+					"returns": {
+						"_0": "The number stored in the contract."
+					}
+				},
+				"store(uint256)": {
+					"details": "Stores a given number in the contract's state. The `number` state variable is updated with the new value provided by the caller. This function modifies the contract's state, so it requires a transaction to execute.",
+					"params": {
+						"num": "The number to be stored in the contract."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HelloWorld.sol": "HelloWorld"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HelloWorld.sol": {
+			"keccak256": "0x8854de98854c07eedbf05df11ab8c1478b41c6bc63d16637a7df49c953889b15",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3a79a1a147cd523c7bfa3e5c9f13d65505fb4b885c48828372fe1ccd79ee1b7a",
+				"dweb:/ipfs/QmXjeDZEenzh99HfH8Ec8H8qC8FVh22vx51HJuvxhdr9La"
+			]
+		}
+	},
+	"version": 1
+}

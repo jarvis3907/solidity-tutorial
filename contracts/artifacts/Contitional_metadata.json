@@ -1,0 +1,105 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "changeEditState",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "changeReadState",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEdit",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRead",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"changeEditState()": {
+					"details": "Public function to toggle the `canEdit` state. It switches the `canEdit` boolean value between `true` and `false`. If `canEdit` is `true`, calling this function will set it to `false` and vice versa. This function modifies the contract's state."
+				},
+				"changeReadState()": {
+					"details": "Public function to toggle the `canRead` state. It switches the `canRead` boolean value between `true` and `false`. If `canRead` is `true`, calling this function will set it to `false` and vice versa. This function modifies the contract's state."
+				},
+				"getEdit()": {
+					"details": "Public view function that returns the current state of `canEdit`. It indicates whether editing is allowed or not. As a `view` function, it does not modify the contract's state and is used for reading purposes only.",
+					"returns": {
+						"_0": "A boolean value representing the edit permission (`true` if editing is allowed, `false` otherwise)."
+					}
+				},
+				"getRead()": {
+					"details": "Public view function that returns the current state of `canRead`. It indicates whether reading is allowed or not. As a `view` function, it does not modify the contract's state and is used for reading purposes only.",
+					"returns": {
+						"_0": "A boolean value representing the read permission (`true` if reading is allowed, `false` otherwise)."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Conditional.sol": "Contitional"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Conditional.sol": {
+			"keccak256": "0xbcccd1cfc121e6b56b5b44f5a6989d41e3aaff111cb0f1b849c3ecf5d71fd731",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3b27881247baa76a5f7344dbbcfe1b71843ee299dc342edd2a5b858119d0c6af",
+				"dweb:/ipfs/QmQJiFyweqTDcGXpUGVtAyzPYkNndXQim2qFtb6dRHNsYV"
+			]
+		}
+	},
+	"version": 1
+}
