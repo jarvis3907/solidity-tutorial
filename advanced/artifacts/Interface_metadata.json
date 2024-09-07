@@ -1,0 +1,175 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_a",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "_b",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Comparable",
+						"name": "other",
+						"type": "address"
+					}
+				],
+				"name": "equalTo",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Comparable",
+						"name": "other",
+						"type": "address"
+					}
+				],
+				"name": "greaterThan",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Comparable",
+						"name": "other",
+						"type": "address"
+					}
+				],
+				"name": "lessThan",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract implements the Comparable interface for a vector represented by two integers, a and b.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Constructor to initialize the vector with two integers.",
+					"params": {
+						"_a": "The first integer.",
+						"_b": "The second integer."
+					}
+				},
+				"equalTo(address)": {
+					"details": "Checks if the current vector is equal to another vector.",
+					"params": {
+						"other": "The other Comparable object to compare against."
+					},
+					"returns": {
+						"_0": "True if the current vector's value is equal to the other vector's value, false otherwise."
+					}
+				},
+				"getValue()": {
+					"details": "Returns the sum of the two integers representing the vector.",
+					"returns": {
+						"_0": "The sum of a and b as an int256."
+					}
+				},
+				"greaterThan(address)": {
+					"details": "Checks if the current vector is greater than another vector.",
+					"params": {
+						"other": "The other Comparable object to compare against."
+					},
+					"returns": {
+						"_0": "True if the current vector's value is greater than the other vector's value, false otherwise."
+					}
+				},
+				"lessThan(address)": {
+					"details": "Checks if the current vector is less than another vector.",
+					"params": {
+						"other": "The other Comparable object to compare against."
+					},
+					"returns": {
+						"_0": "True if the current vector's value is less than the other vector's value, false otherwise."
+					}
+				}
+			},
+			"title": "Interface Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Interface.sol": "Interface"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Interface.sol": {
+			"keccak256": "0xdfc4047ef5b95b1bf0aded89f544a752cf4984f9af945eb36647412ed6fa9000",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://312e3eeae048d313dac4e7f713e623608ad53117dfdc7c82ccef997ffe173f92",
+				"dweb:/ipfs/QmQsq7WHkd7YwSa6URpGM2f9kGbMgKafR4ufvz9ZAyq2vc"
+			]
+		}
+	},
+	"version": 1
+}

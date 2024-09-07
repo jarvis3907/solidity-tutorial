@@ -1,0 +1,137 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256[]",
+						"name": "values",
+						"type": "int256[]"
+					},
+					{
+						"internalType": "bool",
+						"name": "down",
+						"type": "bool"
+					}
+				],
+				"name": "average",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "ceil",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "floor",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"average(int256[],bool)": {
+					"details": "Calculates the average of an array of integers and either floors or ceilings the result.",
+					"params": {
+						"down": "A boolean flag to determine if the average should be floored (true) or ceiled (false).",
+						"values": "The array of integer values to compute the average from."
+					},
+					"returns": {
+						"_0": "The floored or ceiled average of the input values."
+					}
+				},
+				"ceil(int256)": {
+					"details": "Returns the ceiling of the given integer value to the nearest higher multiple of 10.",
+					"params": {
+						"value": "The integer value to be ceiled."
+					},
+					"returns": {
+						"_0": "The ceiled integer value to the nearest higher multiple of 10."
+					}
+				},
+				"floor(int256)": {
+					"details": "Returns the floor of the given integer value to the nearest lower multiple of 10.",
+					"params": {
+						"value": "The integer value to be floored."
+					},
+					"returns": {
+						"_0": "The floored integer value to the nearest lower multiple of 10."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Arithmetic.sol": "Arithmetic"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Arithmetic.sol": {
+			"keccak256": "0xe1a7009029a64741e70618612170c2217d68be5e88a324c6b96f1170e8c5f79c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://29e67194605da3088fce2956b5c739a9f26d2d0ac47e04cb94d0ccde7e0f82f0",
+				"dweb:/ipfs/Qmdu8yvSKZoL4sATDAsjaHzEGRRXYuvibK9gVSQpxgBYmh"
+			]
+		}
+	},
+	"version": 1
+}

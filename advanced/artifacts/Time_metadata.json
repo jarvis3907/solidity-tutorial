@@ -1,0 +1,163 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTimeMinusOneDay",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTimeMinusOneHour",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTimeMinusOneMinute",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTimeMinusOneSecond",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTimeMinusOneWeek",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Provides functions to get the current time and perform time calculations with different time units in Solidity.",
+			"kind": "dev",
+			"methods": {
+				"getTime()": {
+					"details": "Returns the current block timestamp.",
+					"returns": {
+						"_0": "The current block timestamp in seconds since the Unix epoch."
+					}
+				},
+				"getTimeMinusOneDay()": {
+					"details": "Returns the block timestamp minus one day.",
+					"returns": {
+						"_0": "The current block timestamp minus 1 day, in seconds since the Unix epoch."
+					}
+				},
+				"getTimeMinusOneHour()": {
+					"details": "Returns the block timestamp minus one hour.",
+					"returns": {
+						"_0": "The current block timestamp minus 1 hour, in seconds since the Unix epoch."
+					}
+				},
+				"getTimeMinusOneMinute()": {
+					"details": "Returns the block timestamp minus one minute.",
+					"returns": {
+						"_0": "The current block timestamp minus 1 minute, in seconds since the Unix epoch."
+					}
+				},
+				"getTimeMinusOneSecond()": {
+					"details": "Returns the block timestamp minus one second.",
+					"returns": {
+						"_0": "The current block timestamp minus 1 second, in seconds since the Unix epoch."
+					}
+				},
+				"getTimeMinusOneWeek()": {
+					"details": "Returns the block timestamp minus one week.",
+					"returns": {
+						"_0": "The current block timestamp minus 1 week, in seconds since the Unix epoch."
+					}
+				}
+			},
+			"title": "Time Utility Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Time.sol": "Time"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Time.sol": {
+			"keccak256": "0xb27cb2b77cf90440b6539a5281e1e8454fbe8b0a6ea37186f2fc295d6cf89ceb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ea1d8202fdd881159a141882bd5195bbc5dd0d5aa69ef6394089dea5b3c51f11",
+				"dweb:/ipfs/QmXTM7eZt5nvBVuDraoSCEj6d14npQeSwHMFitnvhvmsMe"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,136 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "price",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract represents a basic item with a name and price.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Constructor to initialize the item with a name and price.",
+					"params": {
+						"_name": "The name of the item.",
+						"_price": "The price of the item."
+					}
+				},
+				"getName()": {
+					"details": "Returns the name of the item.",
+					"returns": {
+						"_0": "The name of the item as a string."
+					}
+				},
+				"getPrice()": {
+					"details": "Returns the price of the item.",
+					"returns": {
+						"_0": "The price of the item as a uint256."
+					}
+				}
+			},
+			"title": "Item Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Inheritance.sol": "Item"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Inheritance.sol": {
+			"keccak256": "0x13385e1d8ac3ac3dd1ac41a6f1c9e3175e8068b554b6ee073a0d2e540d0c59c1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://deb1d91ca22a9759d24d53db39a566e578c2a61dd97606d0fcff976921ac5b90",
+				"dweb:/ipfs/QmaUYLGbMUMxyTpi58cf4gziZjhq9J5j9MzfXt4cFXPJNn"
+			]
+		}
+	},
+	"version": 1
+}

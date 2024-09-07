@@ -1,0 +1,142 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "enum Enums.Size",
+						"name": "size",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum Enums.Color",
+						"name": "color",
+						"type": "uint8"
+					}
+				],
+				"name": "buyShirt",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Enums.Size",
+						"name": "size",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum Enums.Color",
+						"name": "color",
+						"type": "uint8"
+					}
+				],
+				"name": "getShirtPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Enums.Size",
+						"name": "size",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum Enums.Color",
+						"name": "color",
+						"type": "uint8"
+					}
+				],
+				"name": "getShirts",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract allows users to buy shirts of different sizes and colors.",
+			"kind": "dev",
+			"methods": {
+				"buyShirt(uint8,uint8)": {
+					"details": "Allows users to buy a shirt of a specific size and color by paying the correct amount.",
+					"params": {
+						"color": "The color of the shirt.",
+						"size": "The size of the shirt."
+					}
+				},
+				"getShirtPrice(uint8,uint8)": {
+					"details": "Returns the price of a shirt based on its size and color.",
+					"params": {
+						"color": "The color of the shirt.",
+						"size": "The size of the shirt."
+					},
+					"returns": {
+						"_0": "The price of the shirt in wei."
+					}
+				},
+				"getShirts(uint8,uint8)": {
+					"details": "Returns the number of shirts owned by the caller of a specific size and color.",
+					"params": {
+						"color": "The color of the shirt.",
+						"size": "The size of the shirt."
+					},
+					"returns": {
+						"_0": "The count of shirts of the specified size and color owned by the caller."
+					}
+				}
+			},
+			"title": "FancyShirts Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Enums.sol": "Enums"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Enums.sol": {
+			"keccak256": "0xefe5080feacf57cf88fb93685dad7886080c052cf322bc249e52d489b1d47f46",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98b8d1339b2a83e6728739982968a8db10c70390067b0c51cbef06beb89e4b29",
+				"dweb:/ipfs/QmSUEkeZmci9v5kFW22MzXV65aK2pBhra257vCNUcXmyBN"
+			]
+		}
+	},
+	"version": 1
+}

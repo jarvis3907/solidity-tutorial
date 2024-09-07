@@ -1,0 +1,114 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCount",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "subtract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract allows only the owner to modify a count variable within a defined range.",
+			"kind": "dev",
+			"methods": {
+				"add(int256)": {
+					"details": "Adds a value to the count, ensuring it stays within the allowed range.",
+					"params": {
+						"value": "The value to add."
+					}
+				},
+				"constructor": {
+					"details": "Sets the contract deployer as the owner."
+				},
+				"getCount()": {
+					"details": "Returns the current count value. Only the owner can view it.",
+					"returns": {
+						"_0": "The current count as an integer."
+					}
+				},
+				"subtract(int256)": {
+					"details": "Subtracts a value from the count, ensuring it stays within the allowed range.",
+					"params": {
+						"value": "The value to subtract."
+					}
+				}
+			},
+			"title": "RestrictedCount Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Modifiers.sol": "Modifiers"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Modifiers.sol": {
+			"keccak256": "0x53b3af58fba62e6d79231f7b5d5273cea266ef9cd6cfa37b0caa5bfc22a81049",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://365dfd8e23d5bc444e1b1d8f5cb81fc57d402b2fc2e9ca8ec004de9d692fb73d",
+				"dweb:/ipfs/Qmdddk7i4SjEbKqT1NXvhd681EEkMJxRCpmMnui7ABagoN"
+			]
+		}
+	},
+	"version": 1
+}

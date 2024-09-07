@@ -1,0 +1,145 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256[]",
+						"name": "numbers",
+						"type": "int256[]"
+					},
+					{
+						"internalType": "int256",
+						"name": "target",
+						"type": "int256"
+					}
+				],
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256[]",
+						"name": "numbers",
+						"type": "int256[]"
+					},
+					{
+						"internalType": "int256",
+						"name": "target",
+						"type": "int256"
+					}
+				],
+				"name": "indexOf",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256[]",
+						"name": "numbers",
+						"type": "int256[]"
+					}
+				],
+				"name": "sum",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract provides basic array utility functions such as finding an index, counting occurrences, and summing up values.",
+			"kind": "dev",
+			"methods": {
+				"count(int256[],int256)": {
+					"details": "Counts the occurrences of a target value in an array.",
+					"params": {
+						"numbers": "The array of integers to search within.",
+						"target": "The target value to count."
+					},
+					"returns": {
+						"_0": "The number of occurrences of the target value in the array."
+					}
+				},
+				"indexOf(int256[],int256)": {
+					"details": "Finds the index of a target value in an array.",
+					"params": {
+						"numbers": "The array of integers to search within.",
+						"target": "The target value to find."
+					},
+					"returns": {
+						"_0": "The index of the target value if found; otherwise, -1."
+					}
+				},
+				"sum(int256[])": {
+					"details": "Sums all values in an array.",
+					"params": {
+						"numbers": "The array of integers to sum up."
+					},
+					"returns": {
+						"_0": "The sum of all integers in the array."
+					}
+				}
+			},
+			"title": "Library Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Library.sol": "Array"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Library.sol": {
+			"keccak256": "0x6799e682d22b8961025021dea9a486ab8e63ae3ac07d21a9223e191d8370ad7a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d9acbf78925a345c38ce4aa0a30632ef3ef0f8997987fc4157e77eeabe125c95",
+				"dweb:/ipfs/QmbgSURj9js6LiSrd2jXQnTdBZGgjDrsq78957tjsbCHnu"
+			]
+		}
+	},
+	"version": 1
+}

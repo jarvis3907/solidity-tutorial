@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract implements the AbstractContract and defines the bonus amount and bonus requirement.",
+			"kind": "dev",
+			"methods": {
+				"deposit()": {
+					"details": "Function to deposit Ether into the contract. If the user has not deposited before and meets the bonus requirement, a bonus is added."
+				},
+				"getBalance()": {
+					"details": "Function to get the balance of the sender.",
+					"returns": {
+						"_0": "The balance of the sender as a uint256."
+					}
+				},
+				"withdraw(uint256)": {
+					"details": "Function to withdraw Ether from the contract.",
+					"params": {
+						"amount": "The amount to withdraw."
+					}
+				}
+			},
+			"title": "Bank Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/AbstractContract.sol": "Bank"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/AbstractContract.sol": {
+			"keccak256": "0x29fcbe0e73a589a430126f6d7433a993061c780b03cccb6e1483d3f27dfd6f5c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb4c9530229f1306794add03c4be388b5ee16e9b2fb40e898a24bf71aafcdff8",
+				"dweb:/ipfs/QmbyZT3UWhHrwaWatBnhQT7BSqigtTDq3NvenH3xEajTp5"
+			]
+		}
+	},
+	"version": 1
+}

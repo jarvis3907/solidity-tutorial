@@ -88,13 +88,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "test",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -121,9 +114,6 @@
 					"params": {
 						"idx": "The index of the element to be removed from the fixedSizeArray."
 					}
-				},
-				"test()": {
-					"details": "Demonstrates creating a memory array in a function. This is a temporary array that exists only in memory. It is used here purely for illustrative purposes."
 				}
 			},
 			"title": "Arrays",
@@ -137,7 +127,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Arrays.sol": "Arrays"
+			"basics/Arrays.sol": "Arrays"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -151,12 +141,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Arrays.sol": {
-			"keccak256": "0xece6afcdb14b9a25f8225171d81837d7a91bf97a590ab45164359d6bad36e5ef",
+		"basics/Arrays.sol": {
+			"keccak256": "0xf1a7d00227414cef7be7342564b6ff1e0554a0648cedcdae235c0b21857cc025",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b31b5a3a9ca36ba9c1db4bbead10077904d9849d671c69f71f08c1e9d23e97e4",
-				"dweb:/ipfs/QmYwHgSZ7qujoLyRRASPwWRDGDN4UuqQ7pTdN3J9hM8oPh"
+				"bzz-raw://8d90fce6d4756532a0580e1bb8a4bd48e9ae5868b9a445f44b4b25d53235c77f",
+				"dweb:/ipfs/QmTiNWwDeYozoBiSPA9HpR8FZQGAmEszfHrSykkUXVakoh"
 			]
 		}
 	},

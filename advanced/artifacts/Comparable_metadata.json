@@ -1,0 +1,152 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract Comparable",
+						"name": "other",
+						"type": "address"
+					}
+				],
+				"name": "equalTo",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Comparable",
+						"name": "other",
+						"type": "address"
+					}
+				],
+				"name": "greaterThan",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Comparable",
+						"name": "other",
+						"type": "address"
+					}
+				],
+				"name": "lessThan",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This interface defines the comparison operations that a contract must implement.",
+			"kind": "dev",
+			"methods": {
+				"equalTo(address)": {
+					"details": "Compares if the current object is equal to another.",
+					"params": {
+						"other": "The other Comparable object to compare against."
+					},
+					"returns": {
+						"_0": "True if the current object is equal to the other, false otherwise."
+					}
+				},
+				"getValue()": {
+					"details": "Returns the value associated with the Comparable object.",
+					"returns": {
+						"_0": "The value as an int256."
+					}
+				},
+				"greaterThan(address)": {
+					"details": "Compares if the current object is greater than another.",
+					"params": {
+						"other": "The other Comparable object to compare against."
+					},
+					"returns": {
+						"_0": "True if the current object is greater than the other, false otherwise."
+					}
+				},
+				"lessThan(address)": {
+					"details": "Compares if the current object is less than another.",
+					"params": {
+						"other": "The other Comparable object to compare against."
+					},
+					"returns": {
+						"_0": "True if the current object is less than the other, false otherwise."
+					}
+				}
+			},
+			"title": "Comparable Interface",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Interface.sol": "Comparable"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Interface.sol": {
+			"keccak256": "0xdfc4047ef5b95b1bf0aded89f544a752cf4984f9af945eb36647412ed6fa9000",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://312e3eeae048d313dac4e7f713e623608ad53117dfdc7c82ccef997ffe173f92",
+				"dweb:/ipfs/QmQsq7WHkd7YwSa6URpGM2f9kGbMgKafR4ufvz9ZAyq2vc"
+			]
+		}
+	},
+	"version": 1
+}

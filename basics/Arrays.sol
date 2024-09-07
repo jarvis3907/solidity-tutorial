@@ -44,13 +44,4 @@ contract Arrays {
     function remove(uint256 idx) public {
         delete fixedSizeArray[idx];
     }
-
-    /**
-     * @dev Demonstrates creating a memory array in a function. This is a temporary array that exists only in memory.
-     * It is used here purely for illustrative purposes.
-     */
-    function test() public {
-        // A fixed-size array in memory with 3 unsigned integers.
-        uint[3] memory numbers = [uint(1), uint(2), uint(3)];
-    }
 }

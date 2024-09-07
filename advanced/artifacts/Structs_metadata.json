@@ -1,0 +1,146 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "listName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "itemName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					}
+				],
+				"name": "addItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "createList",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "listName",
+						"type": "string"
+					}
+				],
+				"name": "getItemNames",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getListNames",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract allows users to create, manage, and interact with their personal shopping lists.",
+			"kind": "dev",
+			"methods": {
+				"addItem(string,string,uint256)": {
+					"details": "Adds an item with a specified name and quantity to a specific list created by the sender.",
+					"params": {
+						"itemName": "The name of the item to add.",
+						"listName": "The name of the list to add the item to.",
+						"quantity": "The quantity of the item to add."
+					}
+				},
+				"createList(string)": {
+					"details": "Creates a new shopping list for the sender with the specified name.",
+					"params": {
+						"name": "The name of the list to create."
+					}
+				},
+				"getItemNames(string)": {
+					"details": "Retrieves the names of all items in a specific list created by the sender.",
+					"params": {
+						"listName": "The name of the list to retrieve item names from."
+					},
+					"returns": {
+						"_0": "An array of strings containing the names of the items in the list."
+					}
+				},
+				"getListNames()": {
+					"details": "Retrieves the names of all lists created by the sender.",
+					"returns": {
+						"_0": "An array of strings containing the names of the lists."
+					}
+				}
+			},
+			"title": "Shopping List Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Structs.sol": "Structs"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Structs.sol": {
+			"keccak256": "0xd8c6d0b3ac210a37f22603ec5a9f90e23e34e9731fe4b57b177cd7702fede683",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ddd6a32dc21aa797327d17e8ee8ea374fbd2033ab7e3e7dc200944c585595b9b",
+				"dweb:/ipfs/Qmdqu8vwpLGvdKD13VWTUQPhDHnfK42EfKQArUJiQU1yaf"
+			]
+		}
+	},
+	"version": 1
+}
