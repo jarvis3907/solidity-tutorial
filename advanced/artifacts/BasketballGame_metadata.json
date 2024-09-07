@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_homeTeam",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_awayTeam",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "score",
+						"type": "uint256"
+					}
+				],
+				"name": "awayTeamScored",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getWinningTeam",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "score",
+						"type": "uint256"
+					}
+				],
+				"name": "homeTeamScored",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "A contract that inherits from Game to manage a basketball game.",
+			"kind": "dev",
+			"methods": {
+				"awayTeamScored(uint256)": {
+					"details": "Updates the away team score.",
+					"params": {
+						"score": "The score to add to the away team."
+					}
+				},
+				"constructor": {
+					"details": "Constructor to initialize the basketball game with home and away teams.",
+					"params": {
+						"_awayTeam": "The name of the away team.",
+						"_homeTeam": "The name of the home team."
+					}
+				},
+				"getWinningTeam()": {
+					"details": "Returns the team with the highest score.",
+					"returns": {
+						"_0": "string The name of the winning team."
+					}
+				},
+				"homeTeamScored(uint256)": {
+					"details": "Updates the home team score.",
+					"params": {
+						"score": "The score to add to the home team."
+					}
+				}
+			},
+			"title": "BasketballGame",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Game.sol": "BasketballGame"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Game.sol": {
+			"keccak256": "0xea09e9d2ae2c0afe37161039d5ae2a802595e35e8ad9ae5ee5da57b7c5a66586",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c14197d87070474fa56602fdc48c00ef5faf30d10e702c3a3870cca928375d24",
+				"dweb:/ipfs/QmXNpmTz7Ec7GuaDkPf8yA4Zy6SYH2abNjLRedimAKohmJ"
+			]
+		}
+	},
+	"version": 1
+}

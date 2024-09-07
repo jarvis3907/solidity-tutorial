@@ -1,0 +1,187 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lastName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_hourlyPay",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Employee.Department",
+						"name": "_department",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lastName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_hourlyPay",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Employee.Department",
+						"name": "_department",
+						"type": "uint8"
+					}
+				],
+				"name": "addSubordinate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFirstName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSubordinates",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hoursWorked",
+						"type": "uint256"
+					}
+				],
+				"name": "getWeeklyPay",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "A contract that inherits from Employee and manages subordinates.",
+			"kind": "dev",
+			"methods": {
+				"addSubordinate(string,string,uint256,uint8)": {
+					"details": "Adds a subordinate to the manager.",
+					"params": {
+						"_department": "The department the subordinate belongs to.",
+						"_firstName": "The first name of the subordinate.",
+						"_hourlyPay": "The hourly pay rate of the subordinate.",
+						"_lastName": "The last name of the subordinate."
+					}
+				},
+				"constructor": {
+					"details": "Constructor to initialize the manager details.",
+					"params": {
+						"_department": "The department the manager belongs to.",
+						"_firstName": "The first name of the manager.",
+						"_hourlyPay": "The hourly pay rate of the manager.",
+						"_lastName": "The last name of the manager."
+					}
+				},
+				"getFirstName()": {
+					"details": "Gets the first name of the employee.",
+					"returns": {
+						"_0": "string The first name of the employee."
+					}
+				},
+				"getSubordinates()": {
+					"details": "Gets the list of subordinates' first names managed by the manager.",
+					"returns": {
+						"_0": "string[] The list of first names of subordinates."
+					}
+				},
+				"getWeeklyPay(uint256)": {
+					"details": "Calculates the weekly pay for the employee based on hours worked.",
+					"params": {
+						"hoursWorked": "The number of hours worked by the employee."
+					},
+					"returns": {
+						"_0": "uint256 The total weekly pay."
+					}
+				}
+			},
+			"title": "Manager",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Manager.sol": "Manager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Manager.sol": {
+			"keccak256": "0xe3a160c6768281475e9bd8ce80c5a49cdc14a13af8e5a9c785cea019b25f3401",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://73c872b2bf95b18b4821999dc5e98bfaddf852f8c4825558df661f21075ca643",
+				"dweb:/ipfs/QmajoNVb8V9RMZxBe6iGtmnLpF1y6EQxi9TAic3VHceHhM"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,144 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "friend",
+						"type": "address"
+					}
+				],
+				"name": "acceptFriendRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFriendRequests",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFriends",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumberOfFriends",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "friend",
+						"type": "address"
+					}
+				],
+				"name": "sendFriendRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "A contract to manage a basic friend request system.",
+			"kind": "dev",
+			"methods": {
+				"acceptFriendRequest(address)": {
+					"details": "Accepts a friend request from another address.",
+					"params": {
+						"friend": "The address whose friend request is to be accepted."
+					}
+				},
+				"getFriendRequests()": {
+					"details": "Gets the friend requests received by the sender.",
+					"returns": {
+						"_0": "address[] The list of addresses that have sent a friend request."
+					}
+				},
+				"getFriends()": {
+					"details": "Gets the list of friends of the sender.",
+					"returns": {
+						"_0": "address[] The list of friends."
+					}
+				},
+				"getNumberOfFriends()": {
+					"details": "Gets the number of friends of the sender.",
+					"returns": {
+						"_0": "uint256 The number of friends."
+					}
+				},
+				"sendFriendRequest(address)": {
+					"details": "Sends a friend request to another address.",
+					"params": {
+						"friend": "The address to send a friend request to."
+					}
+				}
+			},
+			"title": "Friends",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/ExampleWithAllConcepts.sol": "ExampleWithAllConcepts"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/ExampleWithAllConcepts.sol": {
+			"keccak256": "0x317b98a44a7a8176ed1bc956794d1d95368b13342a541208b7b48edd03155aea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f68d167abec3a781cdfe3d83d116728de761feafe07135eb7d0c5c96f5271576",
+				"dweb:/ipfs/QmY1JGQuYV2CEUFfJjAyVNsnL1EWVTvX6TBDsLvh4FMS4U"
+			]
+		}
+	},
+	"version": 1
+}

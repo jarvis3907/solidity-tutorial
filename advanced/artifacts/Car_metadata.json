@@ -1,0 +1,187 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_fuelTankSize",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_kilometersPerLitre",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "kilometers",
+						"type": "uint256"
+					}
+				],
+				"name": "drive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "litres",
+						"type": "uint256"
+					}
+				],
+				"name": "fuelUp",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFuelCapacity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getKilometersPerLitre",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "kilometersRemaining",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startEngine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stopEngine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Concrete implementation of GasVehicle representing a car.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Constructor to initialize the car's fuel tank size and fuel efficiency.",
+					"params": {
+						"_fuelTankSize": "The size of the fuel tank.",
+						"_kilometersPerLitre": "The fuel efficiency of the car."
+					}
+				},
+				"drive(uint256)": {
+					"details": "Drives the vehicle for the specified distance.",
+					"params": {
+						"kilometers": "The distance to drive."
+					}
+				},
+				"fuelUp(uint256)": {
+					"details": "Fuels up the vehicle with the specified amount of litres.",
+					"params": {
+						"litres": "The amount of fuel to add to the tank."
+					}
+				},
+				"getFuelCapacity()": {
+					"details": "Returns the fuel capacity of the car.",
+					"returns": {
+						"_0": "uint256 The fuel capacity."
+					}
+				},
+				"getKilometersPerLitre()": {
+					"details": "Returns the kilometers per litre of the car.",
+					"returns": {
+						"_0": "uint256 The kilometers per litre."
+					}
+				},
+				"kilometersRemaining()": {
+					"details": "Returns the kilometers the vehicle can drive with the remaining fuel.",
+					"returns": {
+						"_0": "uint256 The kilometers remaining."
+					}
+				},
+				"startEngine()": {
+					"details": "Starts the engine of the vehicle."
+				},
+				"stopEngine()": {
+					"details": "Stops the engine of the vehicle."
+				}
+			},
+			"title": "Car",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Car.sol": "Car"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Car.sol": {
+			"keccak256": "0xad42d51fee5487a438ff8cda348d6b681180e81e7a02458791780e3ea5f416d8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e40edbed8dcc2c6d36e58323ae86f115d7ac0eb18feff15de155e53550ba737",
+				"dweb:/ipfs/QmcA8cAKMsvECaWsE3XQzLjvAWUv1qNXepmLF2ddmFricS"
+			]
+		}
+	},
+	"version": 1
+}

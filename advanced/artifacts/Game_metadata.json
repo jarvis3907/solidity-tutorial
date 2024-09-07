@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getWinningTeam",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "An abstract contract representing a generic game between two teams.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Constructor to initialize the home and away teams.",
+					"params": {
+						"_awayTeam": "The name of the away team.",
+						"_homeTeam": "The name of the home team."
+					}
+				},
+				"getWinningTeam()": {
+					"details": "Returns the team with the highest score.",
+					"returns": {
+						"_0": "string The name of the winning team."
+					}
+				}
+			},
+			"title": "Game",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Game.sol": "Game"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Game.sol": {
+			"keccak256": "0xea09e9d2ae2c0afe37161039d5ae2a802595e35e8ad9ae5ee5da57b7c5a66586",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c14197d87070474fa56602fdc48c00ef5faf30d10e702c3a3870cca928375d24",
+				"dweb:/ipfs/QmXNpmTz7Ec7GuaDkPf8yA4Zy6SYH2abNjLRedimAKohmJ"
+			]
+		}
+	},
+	"version": 1
+}

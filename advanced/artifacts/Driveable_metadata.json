@@ -1,0 +1,101 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "kilometers",
+						"type": "uint256"
+					}
+				],
+				"name": "drive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "litres",
+						"type": "uint256"
+					}
+				],
+				"name": "fuelUp",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "kilometersRemaining",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startEngine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stopEngine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface for a driveable vehicle that can start, stop, fuel up, and drive.",
+			"kind": "dev",
+			"methods": {},
+			"title": "Driveable",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced/Car.sol": "Driveable"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced/Car.sol": {
+			"keccak256": "0xad42d51fee5487a438ff8cda348d6b681180e81e7a02458791780e3ea5f416d8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e40edbed8dcc2c6d36e58323ae86f115d7ac0eb18feff15de155e53550ba737",
+				"dweb:/ipfs/QmcA8cAKMsvECaWsE3XQzLjvAWUv1qNXepmLF2ddmFricS"
+			]
+		}
+	},
+	"version": 1
+}
