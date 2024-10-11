@@ -11,6 +11,7 @@ contract Constructors {
     // State variable to store the owner's address
     address public owner;
 
+
     /**
      * @dev Constructor that sets the deployer of the contract as the owner.
      * The constructor is executed once when the contract is deployed.

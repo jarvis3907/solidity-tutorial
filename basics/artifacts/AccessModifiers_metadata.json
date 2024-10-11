@@ -170,7 +170,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/AccessModifiers.sol": "AccessModifiers"
+			"basics/AccessModifiers.sol": "AccessModifiers"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -184,12 +184,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/AccessModifiers.sol": {
-			"keccak256": "0x26a73dde344635967ab098d65485bdf1aad642864b45750785ba8a0c172fd65f",
+		"basics/AccessModifiers.sol": {
+			"keccak256": "0x0b2c1efdc49c16fc390a9ecf488681e66554a1a85f969f1fe8e4ab1ea11d81b2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://46f36ead8cd56ca9a43b122832856d91faf4f3f62edba803d3b7f4b3f05c9afb",
-				"dweb:/ipfs/QmcAKeJdG5h54XAWXUPZL4HapGSZ4tXYphWWBhBKsTLo5a"
+				"bzz-raw://c72fbc98333dd75044798fe06dd5e6e68879cc9cc7677ca0dc1908af84f8bd1e",
+				"dweb:/ipfs/QmWUHdd8XkPnSFmbM4yPvBzFAGogPspr3bewxyqS9dp4z9"
 			]
 		}
 	},

@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/HelloWorld.sol": "HelloWorld"
+			"basics/HelloWorld.sol": "HelloWorld"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -72,7 +72,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/HelloWorld.sol": {
+		"basics/HelloWorld.sol": {
 			"keccak256": "0x8854de98854c07eedbf05df11ab8c1478b41c6bc63d16637a7df49c953889b15",
 			"license": "MIT",
 			"urls": [

@@ -66,7 +66,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Constructors.sol": "Constructors"
+			"basics/Constructors.sol": "Constructors"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -80,12 +80,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Constructors.sol": {
-			"keccak256": "0xf61ab035dba47af6ec8b74700e178c29c669b06ae2060e968febf609498a7b92",
+		"basics/Constructors.sol": {
+			"keccak256": "0x2ddaefe9f366b2e2d1b05972f0b01b277b86b7638b8fa939a15e546bd0268fc6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9fd0a93a5cda3493170ef15baf77f762f608d7d5d6059ac685951466067e2b7f",
-				"dweb:/ipfs/QmZQKQrZYT7XPqSGk7r8FXHMKPEbevY1TBFvyAc9Hn2JmV"
+				"bzz-raw://d6b0304e3f9487b1fd2a963556e1eb0ac793f13ffd489feba7e9085368ed69e4",
+				"dweb:/ipfs/Qmcrs1afm6w5RfZoYpmpLh2en65mJL1dZo5g2A6tme7J3V"
 			]
 		}
 	},
